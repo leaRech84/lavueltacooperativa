@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-behavior: smooth ;
+}
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+.nav-link {
+  @apply mx-4 bg-slate-300 px-6 py-4 rounded-xl;
+}
+
+.active {
+  @apply text-white bg-[#03045eff];
+}
+
+.wrapper {
+  @apply max-w-[1170px] px-[15px] mx-auto py-5
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card{
+  @apply relative w-80 cursor-pointer border-b-4 rounded-md bg-gradient-to-t from-white/60 h-44 text-center px-4 py-7 self-end duration-500 delay-100
+}
+
+.card-active{
+  @apply h-auto
+}
+
+.logo{
+  @apply text-5xl mt-2 max-w-[5rem] mx-auto min-w-[5rem] min-h-[5rem] rounded-full bg-green-200 text-green-600 grid place-items-center
+}
+
+.para{
+  @apply mt-5 h-auto rounded-md
+}
+
+.card .skill-level{
+  @apply border-2 border-gray-200 text-white min-w-[3rem] min-h-[3rem] grid place-items-center rounded-full max-w-[3rem] 
+ absolute -right-2.5 scale-0
+}
+
+.card-active .skil-level {
+  @apply scale-[1.3] delay-700 duration-300
+}
+
+.card-active .logo {
+  @apply bg-green-500 text-green-200
+}
